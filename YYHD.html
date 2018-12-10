@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优优好店</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_815490_itgdh3xpdb.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_959275_1o48ah4uiqm.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+   
+    <style>
+        #texttop{
+            background: #000000;
+            width: 100%;
+        }
+        #yyhaodian{
+            width: 100%;
+        }
+        #yyhaodian img{
+            width: 100%;
+            cursor: pointer;
+        }
+        #body-top{
+            width: 100%;
+        }
+        #haodiantop{
+            width:1200px;
+            height:46px;
+            margin:0 auto;
+        }
+        #haodiantop li{
+            height: 46px;
+            line-height: 36px;
+           
+            font-size: 12px;
+            padding-left:20px;
+            float:left;
+        }
+        #haodiantop li a{
+            color: #757575;
+        }
+        #haodiantop li:nth-child(1){
+            margin-left:0;
+        }
+        #haodiantop li:nth-child(2){
+            margin-left: 705px;
+        }
+        #haodiantop li:nth-child(4) a{
+            color: #7ab2f4;
+        }
+        /* heater-net */
+        #header-net{
+            width: 1200px;
+            height: 95px;
+            margin: 0 auto;
+            
+        }
+        #header-net img{
+            float:left;
+            
+        }
+        #tubiao1{
+           margin-left: 47px;
+        }
+        #tubiao2{
+           margin-left: 29px;
+        }
+        #tubiao3{
+           margin-left: 14px;
+        }
+        #kuang{
+            float:left;
+            display: block;
+            width:428px;
+            margin-left: 172px;
+            margin-top: 18px;
+        }
+        #sousuo{
+            float:left;
+            width:336px;
+            height:35px;
+            line-height:34px ;
+            font-size:14px;
+            border:2px solid #f00582 ; 
+            border-radius: 20px 0 0 20px;
+            text-indent: 20px;
+        }
+        #but{
+            float:left;
+            width:88px ;
+            height: 39px;
+            float:left;
+            background: #f00582;
+            border:2px solid #f00582 ; 
+            border-radius: 0 20px 20px 0px;
+            font-size:15px;
+            color: #ffffe7;
+            cursor: pointer;
+        }
+        #list1 li{
+            float:left;
+            width: 53px;
+            height: 70px;
+            margin-left: 40px;
+            font-size: 13px;
+            color: #a8a7a7;
+
+        }
+        #list1 li:nth-child(1){
+            margin-left: 58px;
+        }
+        #list1 li img{
+            margin:9px 0 5px 6px;
+        }
+        /* header-list */
+        #header-list{
+            width: 100%;
+            height:39px;
+            background:#f00582 ;
+        }
+        #list2{
+            width: 1200px;
+            height:39px;
+            margin:0 auto;
+
+        }
+        #list2 li{
+            float: left;
+            font-size: 15px;
+            color: #fff;
+            background:#f00582;
+            padding: 8px 15px;
+            width:126px;
+            text-align: center;
+            border-right: #f00582;
+            cursor: pointer;
+            position: relative;
+        }
+        #list2 li:nth-child(6){
+            padding: 7px 15px;
+            float: right;
+        }
+        #list2 li:nth-child(3) span{
+            position: absolute;
+            top: 5px;
+            left: 109px;
+        }
+        #list2 li:nth-child(1){
+            padding: 7px 27px;
+            width:126px;
+            text-align: center;
+            border-right: #f00582;
+        }
+        #list2 li:nth-child(1):hover{
+            background: #bd166f;
+        }
+        #list2 li:nth-child(2):hover{
+            background: #bd166f;
+        }
+        #list2 li:nth-child(3):hover{
+            background: #bd166f;
+        }
+        #list2 li:nth-child(4):hover{
+            background: #bd166f;
+        }
+        #list2 li:nth-child(5):hover{
+            background: #bd166f;
+        }
+        #list2 li:nth-child(6):hover{
+            background: #bd166f;
+        }
+        /* content1 */
+        #content1{
+            width: 1200px;
+            height:300px;
+            margin:0 auto;
+            /* background: #000000; */
+        }
+        #content-list{
+            width:230px;
+            height:300px;
+            background:#fbeaf4;
+            float: left;
+        }
+        #content-list li{
+            width:50%;
+            height: 43px;
+            line-height: 43px;
+            font-size: 14px;
+            float: left;
+        }
+        #content-list li span{
+            color: #f63697;
+            display:block;
+            float: left;
+            margin:0 8px; 
+        }
+        #content-list li:hover{
+            background:#bd166f;
+        }
+        /* 轮播图 */
+        .swiper-container {
+        float: left;
+        width: 720px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        }
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .next{
+        z-index: 10;
+    }
+    .prev{
+        z-index: 10;
+    }
+    #header-nav{
+        float: left;
+        width: 250px;
+        height: 300px;
+        background:#000000;
+    }
+    </style>
+</head>
+<body>
+    <div id="texttop">
+        <div id="yyhaodian">
+         <img src="images/texttop.gif" alt="">
+        </div>
+    </div>
+    <div id="body-top">
+        <ul id="haodiantop">
+            <li>优优好店 - 好店领好券,网购天天省!</li>
+            <li><a href="">设为首页</a></li>
+            <li><a href="">加入收藏</a></li>
+            <li><a href="">遇到购物问题? 联系我></a></li>
+            
+        </ul>
+              
+        <div id="header-net">
+        
+            <img id="tubiao1" src="images/shangbiao.gif" alt="">
+            <img id="tubiao2" src="images/gang.gif" alt="">
+            <img id="tubiao3" src="images/tubiao1.gif" alt="">
+           <div id="kuang">
+            <input type="text" id="sousuo" placeholder="零食大礼包">
+            <button id="but">搜索</button>
+           </div>
+           <ul id="list1">
+               <li><img src="images/gou.gif" alt=""><p>人工筛选</p></li>
+               <li><img src="images/fnag.gif" alt=""><p>专业砍价</p></li>
+               <li><img src="images/xin.gif" alt=""><p>全场包邮</p></li>
+           </ul>
+        </div>
+        
+    </div>
+    <div id="header-list">
+        <ul id="list2">
+               
+            <li>
+                <span class="iconfont">&#xeaf8;</span>
+                今日上新
+            </li>
+            <li>
+               
+                领券优惠直播
+            </li>
+            <li>
+                咚咚抢
+                <span ><img src="http://a.vpimg3.com/upload/dop/2016/01/04/148/HOTT_qeu.gif" alt=""></span>
+            </li>
+            <li>
+                超级人气榜
+            </li>
+            <li>
+                9块9包邮
+            </li>
+            <li>
+                <span class="iconfont">&#xe638;</span>
+                APP下载
+            </li>
+        </ul>
+    </div>
+    <div id="content1">
+        <ul id="content-list">
+            <li><span class="iconfont">&#xe60a;</span>居家日用</li>
+            <li><span class="iconfont">&#xe608;</span>美食</li>
+            <li><span class="iconfont">&#xe60d;</span>母婴</li>
+            <li><span class="iconfont">&#xe6dc;</span>类妆</li>
+            <li><span class="iconfont">&#xe610;</span>女装</li>
+            <li><span class="iconfont">&#xe6ba;</span>数码家居</li>
+            <li><span class="iconfont">&#xe61d;</span>文娱车品</li>
+            <li><span class="iconfont">&#xe6ec;</span>内衣</li>
+            <li><span class="iconfont">&#xe628;</span>家装家纺</li>
+            <li><span class="iconfont">&#xe613;</span>鞋品</li>
+            <li><span class="iconfont">&#xe611;</span>男装</li>
+            <li><span class="iconfont">&#xe612;</span>配饰</li>
+            <li><span class="iconfont">&#xe6e9;</span>户外运动</li>
+            <li><span class="iconfont">&#xe622;</span>箱包</li>
+        </ul>
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/tu1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/tu1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/tu1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/tu1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/tu1.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="next"><img src="http://cmsstatic.dataoke.com//images/arrowl.png" alt=""></div>
+                <div class="prev"><img src="http://cmsstatic.dataoke.com//images/arrowr.png" alt=""></div>
+              </div>
+        <div id="header-nav">
+            <div class="bt">
+                    “感谢有你，我们的坚持才更有意义”
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="javescript/swiper.min.js"></script>
+<script src="javescript/jquery-1.11.3.min.js"> </script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay:true,//等同于以下设置
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.next',
+        prevEl: '.prev',
+      },
+    });
+</script>
+ 
